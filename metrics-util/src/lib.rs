@@ -36,6 +36,7 @@ pub use histogram::Histogram;
 
 mod recoverable;
 pub use recoverable::RecoverableRecorder;
+pub use recoverable::RecoveryHandle;
 
 #[cfg(feature = "summary")]
 mod summary;

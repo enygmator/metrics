@@ -5,6 +5,8 @@ use metrics::{
     Unit,
 };
 
+/// A handle that holds the recorder after it has been installed globally.
+/// It can be used to recover the original recorder.
 pub struct RecoveryHandle<R> {
     handle: Arc<R>,
 }
